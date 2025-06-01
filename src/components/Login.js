@@ -12,7 +12,7 @@ const Login = () => {
 
     if (email === savedData.email && password === savedData.password) {
       alert('Login successful!');
-      window.location.href = '/'; // Adjust this to your app's landing page
+      window.location.href = '/Signup'; 
     } else {
       alert('Invalid email or password.');
     }
@@ -62,7 +62,7 @@ const Login = () => {
               type="password"
               className="form-control"
               id="password"
-              placeholder="***"
+              placeholder="*"
               required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -74,7 +74,7 @@ const Login = () => {
               <input type="checkbox" className="form-check-input" id="rememberMe" />
               <label className="form-check-label" htmlFor="rememberMe">Remember Me</label>
             </div>
-            <a href="#" className="text-decoration-none small">Forgot Password?</a>
+            <a href="/Signup" className="text-decoration-none small">Create Account</a>
           </div>
 
           <button type="submit" className="btn btn-dark w-100 mb-3">PROCEED</button>
